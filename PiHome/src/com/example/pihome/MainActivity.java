@@ -23,7 +23,7 @@ public class MainActivity extends Activity {
 	 * Whether or not the system UI should be auto-hidden after
 	 * {@link #AUTO_HIDE_DELAY_MILLIS} milliseconds.
 	 */
-	private static final boolean AUTO_HIDE = true;
+	private static final boolean AUTO_HIDE = false;
 
 	/**
 	 * If {@link #AUTO_HIDE} is set, the number of milliseconds to wait after
@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
 	 * If set, will toggle the system UI visibility upon interaction. Otherwise,
 	 * will show the system UI visibility upon interaction.
 	 */
-	private static final boolean TOGGLE_ON_CLICK = true;
+	private static final boolean TOGGLE_ON_CLICK = false;
 
 	/**
 	 * The flags to pass to {@link SystemUiHider#getInstance}.
@@ -112,18 +112,63 @@ public class MainActivity extends Activity {
 		findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
 		
 		// Custom Button
-		final Button outlet = (Button)findViewById(R.id.outlet1);
-		outlet.setOnClickListener(new View.OnClickListener() {
+		
+		final Button outlet1 = (Button)findViewById(R.id.outlet1);
+		outlet1.setOnClickListener(new View.OnClickListener() {
 			private boolean on = true;
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Toast.makeText(getApplicationContext(), "You pressed the outlet", Toast.LENGTH_SHORT).show();
-				if(on && v == outlet) {
-					outlet.setBackgroundResource(R.drawable.outlet_red);
+				if(on && v == outlet1) {
+					outlet1.setBackgroundResource(R.drawable.outlet_red);
 					on = false;
-				} else if(v == outlet) {
-					outlet.setBackgroundResource(R.drawable.outlet_green);
+				} else if(v == outlet1) {
+					outlet1.setBackgroundResource(R.drawable.outlet_green);
+					on = true;
+				}
+			}
+		});
+		final Button outlet2 = (Button)findViewById(R.id.outlet2);
+		outlet2.setOnClickListener(new View.OnClickListener() {
+			private boolean on = true;
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				if(on && v == outlet2) {
+					outlet2.setBackgroundResource(R.drawable.outlet_red);
+					on = false;
+				} else if(v == outlet2) {
+					outlet2.setBackgroundResource(R.drawable.outlet_green);
+					on = true;
+				}
+			}
+		});
+		final Button outlet3 = (Button)findViewById(R.id.outlet3);
+		outlet3.setOnClickListener(new View.OnClickListener() {
+			private boolean on = true;
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				if(on && v == outlet3) {
+					outlet3.setBackgroundResource(R.drawable.outlet_red);
+					on = false;
+				} else if(v == outlet3) {
+					outlet3.setBackgroundResource(R.drawable.outlet_green);
+					on = true;
+				}
+			}
+		});
+		final Button outlet4 = (Button)findViewById(R.id.outlet4);
+		outlet4.setOnClickListener(new View.OnClickListener() {
+			private boolean on = true;
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				if(on && v == outlet4) {
+					outlet4.setBackgroundResource(R.drawable.outlet_red);
+					on = false;
+				} else if(v == outlet4) {
+					outlet4.setBackgroundResource(R.drawable.outlet_green);
 					on = true;
 				}
 			}
