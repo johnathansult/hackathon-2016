@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -108,6 +110,24 @@ public class MainActivity extends Activity {
 		// operations to prevent the jarring behavior of controls going away
 		// while interacting with the UI.
 		findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
+		
+		// Custom Button
+		final Button outlet = (Button)findViewById(R.id.outlet1);
+		outlet.setOnClickListener(new View.OnClickListener() {
+			private boolean on = true;
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Toast.makeText(getApplicationContext(), "You pressed the outlet", Toast.LENGTH_SHORT).show();
+				if(on && v == outlet) {
+					outlet.setBackgroundResource(R.drawable.outlet_red);
+					on = false;
+				} else if(v == outlet) {
+					outlet.setBackgroundResource(R.drawable.outlet_green);
+					on = true;
+				}
+			}
+		});
 	}
 
 	@Override
