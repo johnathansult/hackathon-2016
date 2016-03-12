@@ -52,7 +52,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 
 		final View controlsView = findViewById(R.id.fullscreen_content_controls);
-		final View contentView = findViewById(R.id.fullscreen_content);
+		final View contentView = findViewById(R.id.imageView1);
 
 		// Set up an instance of SystemUiHider to control the system UI for
 		// this activity.
