@@ -62,7 +62,7 @@ public class MainActivity extends ActionBarActivity {
 						}
 					}
 				});
-				final Button outlet4 = (Button)findViewById(R.id.outlet4);
+				/*final Button outlet4 = (Button)findViewById(R.id.outlet4);
 				outlet4.setOnClickListener(new View.OnClickListener() {
 					private boolean on = true;
 					@Override
@@ -76,7 +76,7 @@ public class MainActivity extends ActionBarActivity {
 							on = true;
 						}
 					}
-				});
+				});*/
 			
 	}
 
