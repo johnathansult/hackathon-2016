@@ -2,16 +2,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.testing.MainActivity" >
-
-    <item
-        android:id="@+id/summary"
+	
+	<item
+        android:id="@+id/sensors"
         android:orderInCategory="100"
         android:title="@string/summary"
         app:showAsAction="never"/>
     <item
-        android:id="@+id/sensors"
+        android:id="@+id/summary"
         android:orderInCategory="100"
-        android:title="@string/sensors"
+        android:title="@string/schedule"
         app:showAsAction="never"/>
+    
 
 </menu>

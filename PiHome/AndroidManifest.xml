@@ -30,6 +30,14 @@
             android:name="android.support.PARENT_ACTIVITY"
             android:value="com.example.pihome.MainActivity" />
         </activity>
+        <activity android:name=".Schedule"
+            android:label="@string/schedule"
+            android:parentActivityName="com.example.pihome.MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+        	<meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.pihome.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
