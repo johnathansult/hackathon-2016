@@ -97,8 +97,8 @@ public class MainActivity extends ActionBarActivity {
 			summaryChange();
 			return true;
 		}
-		if (id == R.id.sensors) {
-			sensorsChange();
+		if (id == R.id.schedule) {
+			scheduleChange();
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
@@ -113,7 +113,7 @@ public class MainActivity extends ActionBarActivity {
 	    startActivity(intent);
 	}
 	
-	public void sensorsChange() {
+	public void scheduleChange() {
 	    Intent intent = new Intent(this, Schedule.class);
 	    startActivity(intent);
 	}
