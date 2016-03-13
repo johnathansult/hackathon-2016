@@ -1,9 +1,11 @@
 package com.example.pihome;
 
 import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -27,11 +29,18 @@ public class MainActivity extends ActionBarActivity {
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
 		if (id == R.id.summary) {
+			summaryChange();
 			return true;
 		}
 		if (id == R.id.sensors) {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	
+	/** Called when the user clicks the summary icon */
+	public void summaryChange() {
+	    Intent intent = new Intent(this, Summary.class);
+	    startActivity(intent);
 	}
 }
