@@ -7,6 +7,8 @@
     <string name="dummy_button">Dummy Button</string>
     <string name="floorplan">Floor Plan</string>
     <string name="schedule">Schedule</string>
-    <string name="summary">Summary</string> 
+    <string name="summary">Summary</string>
+    <string name="temp_graph">Tempeture Graph</string>
+    <string name="energy_graph">Energy Graph</string> 
 
 </resources>

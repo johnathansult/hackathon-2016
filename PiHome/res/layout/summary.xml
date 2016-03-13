@@ -3,4 +3,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
+    <ImageView
+        android:id="@+id/temp_graph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/temp_graph"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/temp_graph" />
+
+    <ImageView
+        android:id="@+id/energy_graph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/temp_graph"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/energy_graph"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/energy_graph" />
+
 </RelativeLayout>
